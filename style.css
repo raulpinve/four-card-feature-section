@@ -1,0 +1,113 @@
+
+/* Globals */
+
+:root{
+
+    /* Colors */
+
+    /* Primary */    
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* Neutral */
+    --veryDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+}
+.supervisor{
+    border-top: 3px solid var(--cyan);
+}
+.team-builder{
+    border-top: 3px solid var(--red);
+}
+.karma{
+    border-top: 3px solid var(--orange);
+}
+.calculator{
+    border-top: 3px solid var(--blue);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background: var(--veryLightGray);
+}
+.wrapper{
+    padding: 2em;
+}
+/* Header */
+.header-first-text, .header-second-text{
+    font-size: 1.7em;
+}
+.header-second-text{
+    font-weight: bold;
+}
+.header-third-text{
+    text-align: center;
+    font-size: 1.1em;
+    padding-top: 1em;
+}
+
+/* Card section */
+.card-grid{
+    margin-top: 5em;
+}
+.card{
+    background: white;
+    height: 225px;
+    border-radius: 7px;
+    padding: 1.8em;
+    margin-top: 1.8em;
+
+    box-shadow: 1px 64px 98px -72px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 1px 64px 98px -72px rgba(0,0,0,0.21);
+    -moz-box-shadow: 1px 64px 98px -72px rgba(0,0,0,0.21);   
+}
+.card-text{
+    margin-top: .5em;
+}
+.card-logo{
+    margin-top: 1em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Media querys */
+
+@media screen and (min-width: 1440px){
+
+    .wrapper{
+        width: 1115px;
+        height: 100vh;
+        margin: auto;
+        padding-top: 5em;
+    }
+
+    .header-first-text, .header-second-text{
+        text-align: center;
+        font-size: 2.3em;
+    }
+
+    .header-third-text{
+        width: 500px;
+        margin: auto;
+        font-size: 1em;
+    }
+
+    .card-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2em;
+        align-items: center;
+        margin-top: 3em;
+    }
+
+}
